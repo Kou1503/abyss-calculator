@@ -1,0 +1,114 @@
+[
+  {
+    "Race":"Human Race",
+    "Rarity":"Common",
+    "Reroll":"Unrollable",
+    "Lucky Reroll":null,
+    "Passive":null
+  },
+  {
+    "Race":"Poop Race",
+    "Rarity":"Common",
+    "Reroll":"16.67%",
+    "Lucky Reroll":null,
+    "Passive":"+10% Damage"
+  },
+  {
+    "Race":"Coral Race",
+    "Rarity":"Common",
+    "Reroll":"16.67%",
+    "Lucky Reroll":null,
+    "Passive":"+10% Oxygen"
+  },
+  {
+    "Race":"Elf Race",
+    "Rarity":"Common",
+    "Reroll":"16.67%",
+    "Lucky Reroll":null,
+    "Passive":"+5% Speed"
+  },
+  {
+    "Race":"Monkey Race",
+    "Rarity":"Uncommon",
+    "Reroll":"9.7%",
+    "Lucky Reroll":"10.33%",
+    "Passive":"+10% Speed, +10% Weight"
+  },
+  {
+    "Race":"Cyclops Race",
+    "Rarity":"Uncommon",
+    "Reroll":"9.7%",
+    "Lucky Reroll":"10.33%",
+    "Passive":"-0.2s Cooldown, +10% Damage"
+  },
+  {
+    "Race":"Fish Race",
+    "Rarity":"Uncommon",
+    "Reroll":"9.7%",
+    "Lucky Reroll":"10.33%",
+    "Passive":"+10% Oxygen, +5% Speed"
+  },
+  {
+    "Race":"Puffer Race",
+    "Rarity":"Rare",
+    "Reroll":"4.7%",
+    "Lucky Reroll":"12.7%",
+    "Passive":"+10% Oxygen. +15% Weight. Spiky Body: Reflects 20% of incoming melee damage back to the attacker."
+  },
+  {
+    "Race":"Spirit Race",
+    "Rarity":"Rare",
+    "Reroll":"4.7%",
+    "Lucky Reroll":"12.7%",
+    "Passive":"-0.3s Cooldown, +8% Cash. Last Breath: After you die, instead of dying, you regenerate 30% of your oxygen. (3 minutes cooldown)"
+  },
+  {
+    "Race":"Narwhal Race",
+    "Rarity":"Rare",
+    "Reroll":"4.7%",
+    "Lucky Reroll":"12.7%",
+    "Passive":"+8% Speed, +15% Weight. Piercing Horn: 10% chance to deal double damage."
+  },
+  {
+    "Race":"Crab Race",
+    "Rarity":"Epic",
+    "Reroll":"2.5%",
+    "Lucky Reroll":"10.5%",
+    "Passive":"+15% Oxygen, +15% Weight, +5% XP. Iron Shell: 25% chance to absorb incoming attacks."
+  },
+  {
+    "Race":"Anglerfish Race",
+    "Rarity":"Epic",
+    "Reroll":"2.5%",
+    "Lucky Reroll":"10.5%",
+    "Passive":"+8% Cash, -0.2s Cooldown, +12% Damage. Hunter's Instinct: 20% chance for double drops when catching fish. Abyssal Light: Illuminates surroundings in darkness."
+  },
+  {
+    "Race":"Vampire Squid Race",
+    "Rarity":"Legendary",
+    "Reroll":"1%",
+    "Lucky Reroll":"5%",
+    "Passive":"+20% Oxygen, +10% XP, +15% Weight. Blood Siphon: When catching a fish, regen oxygen for 10% of the damage dealt. (20 seconds cooldown)"
+  },
+  {
+    "Race":"Shark Race",
+    "Rarity":"Legendary",
+    "Reroll":"1%",
+    "Lucky Reroll":"5%",
+    "Passive":"-0.4s Cooldown, +20% Damage, +10% Cash. Blood Frenzy: When you oxygen is below 30%, you deal +30% more damage. Sea Sprint: Tube boost consumes 50% less oxygen."
+  },
+  {
+    "Race":"Kraken Race",
+    "Rarity":"Mythical",
+    "Reroll":"0.1%",
+    "Lucky Reroll":"0.5%",
+    "Passive":"+20% Weight, +15% XP. +15% Cash. Endless Depths: Every fish caught increases Damage by +0.04% permanently. (caps at +50%) Leviathan's Legacy: After you die instead of dying, regenerate 100% of your oxygen and deals 300% AoE damage around you. (8 minutes cooldown)"
+  },
+  {
+    "Race":"Sea Angel Race",
+    "Rarity":"Mythical",
+    "Reroll":"0.1%",
+    "Lucky Reroll":"0.5%",
+    "Passive":"+10% Speed, +25% Oxygen, +15% Cash. Last Breath Sprint: While oxygen is below 20%, sprinting no longer consumes extra oxygen. Kinetic Wrath: Gain bonus damage equal to 35% of your movement speed. Abyssal Focus As oxygen falls below 50%, your focus sharpens, increasing catching minigame progress speed. This bonus scales with lower oxygen and caps when oxygen reaches 20%."
+  }
+]

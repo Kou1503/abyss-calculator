@@ -1,0 +1,134 @@
+[
+  {
+    "Item":"XP Potion",
+    "Rarity":"Rare",
+    "Category":"Potions",
+    "Effect":"Increases earned XP by 30% for 15 minutes."
+  },
+  {
+    "Item":"Strength Potion",
+    "Rarity":"Rare",
+    "Category":"Potions",
+    "Effect":"Increases your Gun Damage by 30% for 15 minutes."
+  },
+  {
+    "Item":"Speed Potion",
+    "Rarity":"Rare",
+    "Category":"Potions",
+    "Effect":"Increases Tube Speed by 20% for 15 minutes."
+  },
+  {
+    "Item":"Drop Luck Potion",
+    "Rarity":"Rare",
+    "Category":"Potions",
+    "Effect":"Increases Fish Drop Luck by 30% for 15 minutes."
+  },
+  {
+    "Item":"Crimson Shard",
+    "Rarity":"Mythical",
+    "Category":"Potions",
+    "Effect":"Increases Speed and Drop Luck by 50%, but lowers Strength by 15% for 15 minutes."
+  },
+  {
+    "Item":"Void Shard",
+    "Rarity":"Mythical",
+    "Category":"Potions",
+    "Effect":"Increases Strength and XP by 50%, but lowers Speed by 15% for 15 minutes."
+  },
+  {
+    "Item":"Oxygen Shard",
+    "Rarity":"Mythical",
+    "Category":"Potions",
+    "Effect":"Increases Oxygen Capacity by 30% for 15 minutes."
+  },
+  {
+    "Item":"Small Oxygen Pod",
+    "Rarity":"Common",
+    "Category":"Oxygen Pods",
+    "Effect":"Restores 25 Oxygen instantly."
+  },
+  {
+    "Item":"Basic Oxygen Pod",
+    "Rarity":"Uncommon",
+    "Category":"Oxygen Pods",
+    "Effect":"Restores 50 Oxygen instantly."
+  },
+  {
+    "Item":"Advanced Oxygen Pod",
+    "Rarity":"Rare",
+    "Category":"Oxygen Pods",
+    "Effect":"Restores 100 Oxygen instantly."
+  },
+  {
+    "Item":"Heavy Oxygen Pod",
+    "Rarity":"Epic",
+    "Category":"Oxygen Pods",
+    "Effect":"Restores 250 Oxygen instantly."
+  },
+  {
+    "Item":"Mossy Geode",
+    "Rarity":"Common",
+    "Category":null,
+    "Effect":"Obtained in Forgotten Deep and the Ocean."
+  },
+  {
+    "Item":"Cactus Geode",
+    "Rarity":"Common",
+    "Category":null,
+    "Effect":"Obtained from Ancient Sands."
+  },
+  {
+    "Item":"Rooted Geode",
+    "Rarity":"Common",
+    "Category":null,
+    "Effect":"Obtained from Spirit Roots."
+  },
+  {
+    "Item":"Coconut Geode",
+    "Rarity":"Common",
+    "Category":null,
+    "Effect":"Obtained from Sunken Wilds."
+  },
+  {
+    "Item":"Sea Mine",
+    "Rarity":"Common",
+    "Category":"Traps",
+    "Effect":"Obtained from: Crazy Jeff's Store"
+  },
+  {
+    "Item":"Poop",
+    "Rarity":"Common",
+    "Category":"Traps",
+    "Effect":"Obtained from: Bob"
+  },
+  {
+    "Item":"Fish Bone",
+    "Rarity":"Fragment",
+    "Category":null,
+    "Effect":"Obtained in Ancient Sands."
+  },
+  {
+    "Item":"Rocky Moss",
+    "Rarity":"Fragment",
+    "Category":null,
+    "Effect":"Obtained in Spirit Roots."
+  },
+  {
+    "Item":"Banana",
+    "Rarity":"Fragment",
+    "Category":null,
+    "Effect":"Obtained in Sunken Wilds."
+  },
+  {
+    "Item":"Love Potion",
+    "Rarity":"Event",
+    "Category":null,
+    "Effect":"Increases all stats by 10% for 15 minutes."
+  },
+  {
+    "Item":"Heart Geode",
+    "Rarity":"Event",
+    "Category":null,
+    "Effect":"A special Valentine-themed geode."
+  }
+]

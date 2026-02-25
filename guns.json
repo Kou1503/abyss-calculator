@@ -1,0 +1,114 @@
+[
+  {
+    "Gun":"Bottle Gun",
+    "Cost":"Free",
+    "Damage":10,
+    "Cooldown":"2.8s",
+    "Control":0.4,
+    "Obtained From":"First joining the game"
+  },
+  {
+    "Gun":"Starter Gun",
+    "Cost":"$75",
+    "Damage":15,
+    "Cooldown":"2.6s",
+    "Control":0.45,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Gun":"Beginner's Gun",
+    "Cost":"$350",
+    "Damage":20,
+    "Cooldown":"2.4s",
+    "Control":0.5,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Gun":"Advanced Gun",
+    "Cost":"$1,050",
+    "Damage":40,
+    "Cooldown":"2.2s",
+    "Control":0.55,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Gun":"Air Rifle Gun",
+    "Cost":"$2,150",
+    "Damage":55,
+    "Cooldown":"2.4s",
+    "Control":0.6,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Gun":"Crossbow Gun",
+    "Cost":"$4,750",
+    "Damage":85,
+    "Cooldown":"2.6s",
+    "Control":0.65,
+    "Obtained From":"Ancient Sands"
+  },
+  {
+    "Gun":"Wasted Gun",
+    "Cost":"$17,500",
+    "Damage":120,
+    "Cooldown":"2.2s",
+    "Control":0.75,
+    "Obtained From":"Crazy Jeff's Store"
+  },
+  {
+    "Gun":"Magroot Gun",
+    "Cost":"$47,500",
+    "Damage":190,
+    "Cooldown":"2.1s",
+    "Control":0.85,
+    "Obtained From":"Spirit Root Hollow"
+  },
+  {
+    "Gun":"Morveth's Treasure Gun",
+    "Cost":"$82,500",
+    "Damage":240,
+    "Cooldown":"2s",
+    "Control":0.9,
+    "Obtained From":"Morveth's Cave"
+  },
+  {
+    "Gun":"Lost Spirit Gun",
+    "Cost":"$149,500",
+    "Damage":290,
+    "Cooldown":"1.9s",
+    "Control":1.0,
+    "Obtained From":"Spirit Root Hollow"
+  },
+  {
+    "Gun":"Banana Gun",
+    "Cost":"$290,000",
+    "Damage":370,
+    "Cooldown":"2s",
+    "Control":1.0,
+    "Obtained From":"Monkey King's Lair"
+  },
+  {
+    "Gun":"Ruined Gun",
+    "Cost":"$245,000",
+    "Damage":350,
+    "Cooldown":"1.7s",
+    "Control":1.1,
+    "Obtained From":"Angler Cave"
+  },
+  {
+    "Gun":"Plunger Gun",
+    "Cost":"$321,987",
+    "Damage":410,
+    "Cooldown":"2.2s",
+    "Control":0.9,
+    "Obtained From":"Bob's Room"
+  },
+  {
+    "Gun":"Wild Gun",
+    "Cost":"$460,000",
+    "Damage":450,
+    "Cooldown":"1.8s",
+    "Control":1.1,
+    "Obtained From":"Monkey King's Lair"
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "Tube":"Wooden Tube",
+    "Cost":"Free",
+    "Oxygen":40,
+    "Max Depth":"15m",
+    "Speed":20,
+    "Weight":5,
+    "Obtained From":"First joining the game"
+  },
+  {
+    "Tube":"Old Tube",
+    "Cost":"$50",
+    "Oxygen":55,
+    "Max Depth":"25m",
+    "Speed":20,
+    "Weight":10,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Tube":"Normal Tube",
+    "Cost":"$425",
+    "Oxygen":70,
+    "Max Depth":"50m",
+    "Speed":20,
+    "Weight":25,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Tube":"Fire Tube",
+    "Cost":"$1,250",
+    "Oxygen":90,
+    "Max Depth":"100m",
+    "Speed":20,
+    "Weight":40,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Tube":"Pufferfish Tube",
+    "Cost":"$2,850",
+    "Oxygen":110,
+    "Max Depth":"180m",
+    "Speed":22,
+    "Weight":70,
+    "Obtained From":"Forgotten Dome"
+  },
+  {
+    "Tube":"Boat Tube",
+    "Cost":"$5,250",
+    "Oxygen":130,
+    "Max Depth":"275m",
+    "Speed":22,
+    "Weight":100,
+    "Obtained From":"Ancient Sands"
+  },
+  {
+    "Tube":"Zepline Tube",
+    "Cost":"$18,500",
+    "Oxygen":150,
+    "Max Depth":"375m",
+    "Speed":20,
+    "Weight":140,
+    "Obtained From":"Ocean"
+  },
+  {
+    "Tube":"Rukiry Tube",
+    "Cost":"$40,500",
+    "Oxygen":180,
+    "Max Depth":"460m",
+    "Speed":24,
+    "Weight":180,
+    "Obtained From":"Grumpy Hank's tower"
+  },
+  {
+    "Tube":"Oxy Tube",
+    "Cost":"$57,500",
+    "Oxygen":220,
+    "Max Depth":"495m",
+    "Speed":26,
+    "Weight":250,
+    "Obtained From":"Spirit Root Hollow"
+  },
+  {
+    "Tube":"Plane Tube",
+    "Cost":"$86,500",
+    "Oxygen":260,
+    "Max Depth":"550m",
+    "Speed":28,
+    "Weight":290,
+    "Obtained From":"Ocean"
+  },
+  {
+    "Tube":"Lost Spirit Tube",
+    "Cost":"$168,750",
+    "Oxygen":300,
+    "Max Depth":"600m",
+    "Speed":30,
+    "Weight":370,
+    "Obtained From":"Spirit Root Hollow"
+  },
+  {
+    "Tube":"Ruined Tube",
+    "Cost":"$270,000",
+    "Oxygen":370,
+    "Max Depth":"650m",
+    "Speed":32,
+    "Weight":480,
+    "Obtained From":"Angler Cave"
+  },
+  {
+    "Tube":"Banana Tube",
+    "Cost":"$310,000",
+    "Oxygen":340,
+    "Max Depth":"685m",
+    "Speed":34,
+    "Weight":500,
+    "Obtained From":"Monkey King's Lair"
+  },
+  {
+    "Tube":"Bath Tube",
+    "Cost":"$345,678",
+    "Oxygen":330,
+    "Max Depth":"650m",
+    "Speed":28,
+    "Weight":560,
+    "Obtained From":"Bob's Room"
+  },
+  {
+    "Tube":"Wild Tube",
+    "Cost":"$485,000",
+    "Oxygen":410,
+    "Max Depth":"700m",
+    "Speed":30,
+    "Weight":630,
+    "Obtained From":"Monkey King's Lair"
+  }
+]
