@@ -549,17 +549,18 @@ def export_build_dict() -> dict:
             mk = f"{slot}_{field}_mode"
             tk = f"{slot}_{field}_tier"
             vk = f"{slot}_{field}_value"
-            if mk in st.session_state or tk in st.session_state or vk in st.session_state:
-              mode_val = st.session_state.get(mk)
-              tier_val = st.session_state.get(tk)
-              raw_val  = st.session_state.get(vk)
+
+        # Only export if any relevant key exists
+        if mk in st.session_state or tk in st.session_state or vk in st.session_state:
+            mode_val = st.session_state.get(mk)
+            tier_val = st.session_state.get(tk)
+            raw_val = st.session_state.get(vk)
 
             fields[field] = {
-                    "mode": str(mode_val) if mode_val is not None else None,
-                    "tier": int(tier_val) if tier_val is not None else None,
-                    "value": float(raw_val) if raw_val is not None else None,
-                                    }
-
+                "mode": str(mode_val) if mode_val is not None else None,
+                "tier": int(tier_val) if tier_val is not None else None,
+                "value": float(raw_val) if raw_val is not None else None,
+            }
 
         return {"slot": slot, "name": art_name, "fields": fields}
 
