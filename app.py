@@ -38,13 +38,6 @@ def race_first_part(passive: Optional[str]) -> str:
 
 
 def parse_race_passive(passive: str) -> Tuple[float, float, float, float, float]:
-    """
-    Parses ONLY simple stat phrases like:
-      "+8% Cash, -0.2s Cooldown, +12% Damage."
-    Does NOT break decimals.
-    Returns:
-      (race_dmg_mult, race_cd_sec, race_oxygen_mult, race_speed_mult, race_weight_mult)
-    """
     dmg_mult = 0.0
     cd_sec = 0.0
     oxy_mult = 0.0
@@ -52,7 +45,6 @@ def parse_race_passive(passive: str) -> Tuple[float, float, float, float, float]
     wgt_mult = 0.0
 
     s = passive.replace(";", ",")
-    # split by commas OR ". " sentence breaks; keep decimals intact
     parts = [p.strip() for p in re.split(r",|\.\s+", s) if p.strip()]
 
     for p in parts:
@@ -79,10 +71,6 @@ def parse_race_passive(passive: str) -> Tuple[float, float, float, float, float]
 
 
 def parse_item_effect(effect: Optional[str]) -> Dict[str, float]:
-    """
-    Returns keys:
-      dmg_mult, tube_speed_mult, oxygen_mult, weight_mult
-    """
     if not effect:
         return {}
     e = effect.lower()
@@ -127,10 +115,9 @@ def parse_item_effect(effect: Optional[str]) -> Dict[str, float]:
     return out
 
 
-# ==================== Artifact parsing + tier system ====================
 @dataclass
 class ArtifactMods:
-    dmg_mult: float = 0.0      # decimal (e.g., +24% => 0.24)
+    dmg_mult: float = 0.0      # decimal 
     cd_sec: float = 0.0        # seconds
     oxygen_mult: float = 0.0   # decimal
     speed_flat: float = 0.0    # flat
@@ -164,7 +151,6 @@ def parse_artifact_effects_ranges(effects: str):
 
 
 def tier_to_value(vmin: float, vmax: float, tier: int, tiers: int = 7) -> float:
-    # 7 tiers => 6 equal gaps
     t = max(1, min(int(tier), tiers))
     if vmin == vmax:
         return float(vmin)
@@ -172,8 +158,6 @@ def tier_to_value(vmin: float, vmax: float, tier: int, tiers: int = 7) -> float:
     return float(vmin + (t - 1) * step)
 
 
-# Stable field mapping (used for session keys + export/import)
-# field_key => (stat_name, unit)
 ART_FIELD_DEFS = {
     "dmg_pct":    ("damage", "%"),
     "cd_s":       ("cooldown", "s"),
@@ -233,7 +217,6 @@ def artifact_inputs_ui(slot: str, artifact_row: Optional[dict]) -> Tuple[Artifac
             chosen.append({"field": field, "min": vmin, "max": vmax, "tier": None, "value": val})
         else:
             tier_key = f"{slot}_{field}"
-            # ensure default exists
             if tier_key not in st.session_state:
                 st.session_state[tier_key] = 4
 
@@ -249,7 +232,6 @@ def artifact_inputs_ui(slot: str, artifact_row: Optional[dict]) -> Tuple[Artifac
             st.caption(f"[{vmin} → {vmax}]  Tier {tier} ⇒ {val:.4f}")
             chosen.append({"field": field, "min": vmin, "max": vmax, "tier": int(tier), "value": float(val)})
 
-        # apply
         if field == "dmg_pct":
             mods.dmg_mult += val / 100.0
         elif field == "cd_s":
@@ -264,7 +246,6 @@ def artifact_inputs_ui(slot: str, artifact_row: Optional[dict]) -> Tuple[Artifac
     return mods, {"artifact": name, "raw_effects": effects, "chosen": chosen}
 
 
-# ==================== Compute ====================
 def compute(
     gun_damage: float,
     gun_cd: float,
@@ -340,11 +321,9 @@ def compute(
     }
 
 
-# ==================== Import/Export ====================
 BUILD_VERSION = 1
 
 def build_export_dict() -> dict:
-    # selection keys
     gun = st.session_state.get("gun_select")
     tube = st.session_state.get("tube_select")
     race = st.session_state.get("race_select")
@@ -354,7 +333,6 @@ def build_export_dict() -> dict:
     a3 = st.session_state.get("a3_select")
 
     def slot_tiers(slot: str) -> dict:
-        # store tiers for all known fields (even if not currently used)
         out = {}
         for field in ART_FIELD_DEFS.keys():
             k = f"{slot}_{field}"
@@ -377,7 +355,6 @@ def build_export_dict() -> dict:
 
 
 def apply_import_dict(data: dict):
-    # set selections first
     st.session_state["gun_select"] = data.get("gun", st.session_state.get("gun_select"))
     st.session_state["tube_select"] = data.get("tube", st.session_state.get("tube_select"))
     st.session_state["race_select"] = data.get("race", st.session_state.get("race_select"))
@@ -398,11 +375,10 @@ def apply_import_dict(data: dict):
                 st.session_state[f"{slot}_{field}"] = int(tier)
 
 
-# ==================== UI ====================
 st.set_page_config(page_title="Abyss Build Calculator", layout="wide")
 st.title("Abyss Build Calculator")
 
-# Load data
+
 try:
     guns = load_json_file("guns.json")
     tubes = load_json_file("tubes.json")
@@ -419,7 +395,6 @@ races_by = {r["Race"]: r for r in races}
 items_by = {i["Item"]: i for i in items}
 arts_by = {a["Artifact"]: a for a in artifacts}
 
-# Defaults for selection widgets
 if "gun_select" not in st.session_state:
     st.session_state["gun_select"] = sorted(guns_by.keys())[0]
 if "tube_select" not in st.session_state:
@@ -435,7 +410,6 @@ if "a2_select" not in st.session_state:
 if "a3_select" not in st.session_state:
     st.session_state["a3_select"] = "(none)"
 
-# --- Import/Export panel
 with st.sidebar:
     st.header("Build Import / Export")
 
@@ -463,7 +437,6 @@ with st.sidebar:
     with st.expander("Copy/paste JSON"):
         st.text_area("Build JSON", value=export_data, height=220)
 
-# --- Main selections
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -509,8 +482,8 @@ else:
     tube_weight = base_tube_weight
 
 st.divider()
-st.subheader("Artifacts (3 slots, duplicates allowed)")
-st.caption("Ranged stats use Tier 1–7 sliders (linear). Tier 1=min, Tier 7=max.")
+st.subheader("Artifacts")
+st.caption("Tier 1=min, Tier 7=max.")
 
 art_options = ["(none)"] + sorted(arts_by.keys())
 
